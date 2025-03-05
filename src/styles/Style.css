@@ -1,0 +1,267 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #555;
+  }
+  
+  .register-btn {
+    background-color: #ff710d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hero {
+    background-color: #eaf0ff;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-content {
+    flex: 1;
+  }
+  
+  .hero-content h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .hero-content span {
+    color: #ff710d;
+  }
+  
+  .hero-content p {
+    color: #666;
+    margin: 10px 0 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+  }
+  
+  .search-bar select,
+  .search-bar input,
+  .search-bar button {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .upload-resume-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .categories {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .category-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .upload-resume {
+    background-color: #ff710d;
+    color: white;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .upload-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Container styles */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+  }
+  
+  .auth-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Header */
+  .auth-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .auth-card .subtitle {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form styles */
+  .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #ff710d;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 113, 13, 0.5);
+  }
+  
+  .password-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-wrapper input {
+    flex: 1;
+  }
+  
+  .toggle-password {
+    background: none;
+    border: none;
+    color: #ff710d;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+  }
+  
+  /* Button styles */
+  .auth-btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #fff;
+    background: #ff710d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .auth-btn:hover {
+    background: #e5670a;
+  }
+  
+  .auth-btn.loading {
+    opacity: 0.8;
+    cursor: not-allowed;
+  }
+  
+  /* Footer */
+  .auth-footer {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .auth-footer a {
+    color: #ff710d;
+    text-decoration: none;
+  }
+  
+  .auth-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .forgot-password {
+    display: block;
+    margin-top: 0.5rem;
+  }
+  
